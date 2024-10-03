@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CAPPAPB - Accueil</title>
+</head>
+<body>
+    <header>
+        <h1>CAPPAPB</h1>
+        <h2>Comité d'Aidants et de PAtients-Partenaires de Brest</h2>
+    </header>
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <h2>À propos</h2>
+                <p>Nous sommes une communauté innovante et expérimentale de patients-partenaires et de professionnels de santé.</p>
+                <p>Notre communauté est basée à Brest et intervient dans le cadre de la formation au sien de la faculté de médecine ou du CHU.</p>
+                <p>Elle s'agrandit de jours en jours avec de nouveaux patients partenaires.</p>
+
+            </div>
+            <div class="card">
+                <h2>Nos programmes</h2>
+                <h3 class="collapsed">Instants T</h3>
+                <div class="section-content collapsed">
+                    <p>Les Instants T sont des rencontres informelles entre des étudiants en santé et des patients-partenaires pour échanger sur un thème donné (environ 15 étudiants par rencontre)</p>
+                    <p><b>Qui anime ?</b> 2 à 3 patients-partenaires issus du CAPPAB, choisis en fonction du thème abordé</p>
+                    <p><b>Comment sont choisis les thèmes abordés ?</b> Les étudiants font part de leurs envies et besoins via un questionnaire.</p>
+                    <p><b>Pour qui ?</b> Ces rencontres sont à destination de tous les étudiants en santé de tous niveaux et de tous cursus.</p>
+                </div>
+                <h3 class="collapsed">Patients RePairs</h3>
+                <div class="section-content collapsed">
+                    <p><b>C'est quoi ?</b> L'idée est de donner la possibilité aux étudiants en santé de soliciter un entretien individuel avec un patient-partenaire sur un sujet ou vécu qui le préoccupe dans sa pratique ou le questionne.</p>
+                    <p><b>Déroulement des échanges ?</b> Au choix, selon ce que préfère le patients-partenaire et l'étudiant :</p>
+                    <ul>
+                        <li>téléphone</li>
+                        <li>visio</li>
+                        <li>rencontre en présentiel</li>
+                        <li>appel via une application pour maintenir l'anonymat des coordonnées.</li>
+                        <li>Tout est possible !</li>
+                    </ul>
+                    <p><b>Comment ?</b> Via l'application, l'étudiant demandeur contactera Géraldine qui fera le lien avec le patient-partenaire le plus à même de répondre à la problématique.</p>
+                    <p>Les étudiants n'auront pas directement accès aux coordonnées des patients-partenaires, le secret médical sera assuré</p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Nos partenaires</h2>
+                <p>Nous agissons de concert avec les organismes suivant pour construire le partenariat patients-professionnels de santé :</p>
+                <ul>
+                    <li><a href="https://www.univ-brest.fr/faculte-medecine/fr/page/departement-de-prevention-en-sante" target="_blank">Site DPS UBO</a></li>
+                    <li><a href="https://nouveau.univ-brest.fr/formation-continue-alternance/sites/formation-continue-alternance.nouveau.univ-brest.fr/files/2024-05/DIU%20C3P%20-%20Plaquette%20web%202024-2025%20-%20Vmai2024.pdf" target="_blank">Diplôme Inter-Universités</a></li>
+            </div>
+            <div class="card">
+            <h2>Nous contacter</h2>
+            <p>Le CAPPAPB est joignable : </p>
+            <ul>
+                <li>par téléphone ou SMS au <a href="tel:+33663048292">06 63 04 82 92</a></li>
+                <li>par mail à <a href="mailto:geraldine.reber@univ-brest.fr">geraldine.reber@univ-brest.fr</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 CAPPAPB</p>
+    </footer>
+    <script>
+        // Add click event listeners to all h3 elements in cards
+        document.querySelectorAll('.card h3').forEach(h3 => {
+            h3.addEventListener('click', function() {
+                this.classList.toggle('collapsed');
+                const content = this.nextElementSibling;
+                content.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+</html>
